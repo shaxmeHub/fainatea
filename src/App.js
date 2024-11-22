@@ -22,7 +22,7 @@ import Offer from "./pages/Offer/Offer";
 import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
-import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react"
 
 const Layout = () => {
   return (
@@ -35,6 +35,7 @@ const Layout = () => {
       <Outlet />
       <Footer />
       <FooterBottom />
+      <Analytics />
     </div>
   );
 };
