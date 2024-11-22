@@ -21,12 +21,12 @@ import Home from "./pages/Home/Home";
 import Offer from "./pages/Offer/Offer";
 import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import { Analytics } from "@vercel/analytics/react"
 import Shop from "./pages/Shop/Shop";
 
 const Layout = () => {
   return (
     <div>
-      <SpeedInsights />
       <Header />
       <HeaderBottom />
       <SpecialCase />
@@ -34,6 +34,7 @@ const Layout = () => {
       <Outlet />
       <Footer />
       <FooterBottom />
+     
     </div>
   );
 };
@@ -63,6 +64,7 @@ function App() {
   return (
     <div className="font-bodyFont">
       <RouterProvider router={router} />
+      <Analytics mode="production" />
     </div>
   );
 }
