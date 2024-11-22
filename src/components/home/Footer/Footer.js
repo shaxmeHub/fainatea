@@ -77,6 +77,7 @@ const Footer = () => {
           </div>
         </div>
         <div> 
+          {/* check github */}
           <FooterListTitle title="Shop" />
           <ul className="flex flex-col gap-2">
             <li className="font-titleFont text-base text-lightText hover:text-white  decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
